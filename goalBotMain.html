@@ -37,81 +37,81 @@
     <br>
     <h1 style="font-size: 60px">⭐</h1>
 
-    <h1 style="color:white">What are some goals you have for homework today?</h1>
+    <h1 style = "color: white"> ¿Cuáles son algunas de tus metas que tienes para la tarea hoy? </h1>
     <br>
-    <input type="checkbox" style="font-size: 30px" id="goal1" name="goal1" value="goal1"/>
-    <label  class="strikethrough" for="goal1">To finish all my work</label><br/>
+    <input type = "checkbox" style = "font-size: 30px" id = "goal1" name = "goal1" value = "goal1" />
+    <label class = "tachado" for = "goal1"> Para terminar todo mi trabajo </label> <br/>
 
-    <input type="checkbox" style="font-size: 30px" id="goal2" name="goal2" value="goal2"/>
-    <label  class="strikethrough" for="goal2">To not get distracted</label><br/>
+    <input type = "checkbox" style = "font-size: 30px" id = "goal2" name = "goal2" value = "goal2" />
+    <label class = "tachado" for = "goal2"> Para no distraerse </label> <br/>
 
-    <input type="checkbox" style="font-size: 30px" id="goal3" name="goal3" value="goal3"/>
-    <label  class="strikethrough" for="toDo20">To not feel less stressed when doing homework</label><br/>
+    <input type = "checkbox" style = "font-size: 30px" id = "goal3" name = "goal3" value = "goal3" />
+    <label class = "tachado" for = "toDo20"> Para no sentirse menos estresado al hacer la tarea </label> <br/>
 
-    <input type="checkbox" style="font-size: 30px" id="goal4" name="goal4" value="goal4"/>
-    <label  class="strikethrough" for="goal4">Other<input id="goal4Input"type="text" onclick="check();"/></label><br/>
+    <input type = "checkbox" style = "font-size: 30px" id = "goal4" name = "goal4" value = "goal4" />
+    <label class = "tachado" for = "goal4"> Otro <input id = "goal4Input" type = "text" onclick = "check ();" /> </label> <br/>
 
 
 
-    <button class="btn btn-primary" type="submit" value="submit" onclick="showGoalList(); search()">Submit</button>
+    <button class="btn btn-primary" type="submit" value="submit" onclick="showGoalList(); search()">enviar</button>
 
     <h1 style='height:10px'></h1>
 </div>
 </div>
 
 <div id="goalList" style="display:none; background-color: rgba(255, 51, 177, 0.53); width: 100%; height:100%; border-radius: 10px;">
-<h3>Here are your goals for today!</h3>
+<h3> ¡Estos son sus objetivos para hoy! </h3>
 
-<p id="goal1Echo">To finish all my homework</p>
-<p id="goal2Echo">To not get distracted</p>
-<p id="goal3Echo">To feel less stressed when doing homework</p>
-<p id="goal4Echo"><span id="goal4Output"></span></p>
+<p id = "goal1Echo"> Para terminar toda mi tarea </p>
+<p id = "goal2Echo"> Para no distraerse </p>
+<p id = "goal3Echo"> Para sentirse menos estresado al hacer la tarea </p>
+<p id = "goal4Echo"> <span id = "goal4Output"> </span> </p>
 </div>
 
-<div id="goalAdviceDiv" style="display:none; background-color: rgba(255, 51, 177, 0.53); width: 100%; height:100%; border-radius: 10px;">
-<h3>Suggestions:</h3>
+<div id = "goalAdviceDiv" style = "display: none; background-color: rgba (255, 51, 177, 0.53); width: 100%; height: 100%; border-radius: 10px;">
+<h3> Sugerencias: </h3>
 
-<p id="goal1Ad">To finish all your work, how about you use <span><a href="https://sprz05.github.io/HOBv1.0/index.html"  target="_blank"> HOB</a></span> to make a do list for you?</p>
-<p id="goal2Ad">To not get distracted try using<span><a href="ITHB.html" target="_blank"> ITHB</a></span></p>
-<p id="goal3Ad">To feel less stressed when doing your homework use <span><a href="ITHB.html"  target="_blank"> ITHB</a></span> to take brain breaks.</p>
+<p id = "goal1Ad"> Para terminar todo su trabajo, ¿qué tal si usa <span> <a href="https://sprz05.github.io/HOBv1.0/index.html" target="_blank"> HOB </a> </span> para hacer una lista de tareas para usted? </p>
+<p id = "goal2Ad"> Para no distraerse, intente usar <span> <a href="ITHB.html" target="_blank"> ITHB </a> </span> </p>
+<p id = "goal3Ad"> Para sentirse menos estresado al hacer su tarea, use <span> <a href="ITHB.html" target="_blank"> ITHB </a> </span> para tomar descansos para el cerebro. < / p>
 <!---<p id="goal4Ad">To try and achive your other goal remind your self of it by clicking on the star icon to view your goals, or see if theres some advice from other students on <span><a href="https://sprz05.github.io/SLAB_v1.0/"  target="_blank">SLAB</a></span></p>--->
 
 
-<div id="PHOB" style="display:none;">
-<p>To plan out your project use</p>
-    <span><a href="https://sprz05.github.io/Project-HOB/" target="_blank"> PHOB</a></span>
+<div id = "PHOB" style = "display: none;">
+<p> Para planificar el uso de su proyecto </p>
+    <span> <a href="https://sprz05.github.io/Project-HOB/" target="_blank"> PHOB </a> </span>
 </div>
 
-<div id="HOB" style="display:none;">
-<p>To be more productive use:</p>
-    <span><a href="https://sprz05.github.io/HOBv1.0/index.html" target="_blank"> HOB</a></span>
+<div id = "HOB" style = "display: none;">
+<p> Para un uso más productivo: </p>
+    <span> <a href="https://sprz05.github.io/HOBv1.0/index.html" target="_blank"> HOB </a> </span>
 </div>
 
-<div id="ITHB" style="display:none;">
-<p>To be more productive use:</p>
-    <span><a href="ITHB.html" target="_blank"> ITHB</a></span>
+<div id = "ITHB" style = "display: none;">
+<p> Para un uso más productivo: </p>
+    <span> <a href="ITHB.html" target="_blank"> ITHB </a> </span>
 </div>
 
-<div id="SLAB" style="display:none;">
-    <p>Looks like we couldn't find a lot of bots to help you with your other homework goals for today ... try looking in</p>
+<div id = "SLAB" style = "display: none;">
+    <p> Parece que no pudimos encontrar muchos bots para ayudarte con tus otros objetivos de tarea para hoy ... intenta buscar </p>
     <span>
-    <a href="https://sprz05.github.io/SLAB_v1.0/" target="_blank"> SLAB</a>
+    <a href="https://sprz05.github.io/SLAB_v1.0/" target="_blank"> SLAB </a>
     </span>
-    <p> for advice on your homework OR look for bots on your own <span><a href="https://sprz05.github.io/StudyBots/specficBot.html"> Here</a></span></p>
+    <p> para obtener consejos sobre su tarea O busque bots por su cuenta <span> <a href="https://sprz05.github.io/StudyBots/specficBot.html"> Aquí </a> </span> < / p>
 </div>
 
-<div id="WHOB" style="display:none;">
-  <p>To plan out your homework for the week use:</p>  
-    <span><a href="https://sprz05.github.io/SCHEDULE_MAKER/" target="_blank"> WHOB</a></span>
-</div>   
-
-<div id="ITHBTest" style="display:none;">
-  <p>To study for your test try using ITHBTest, note works best with worksheets:</p>  
-    <span><a href="https://sprz05.github.io/ITHIB_v1.0/testITHBCam.html" target="_blank"> ITHBTest</a></span>
-</div>  
+<div id = "WHOB" style = "display: none;">
+  <p> Para planificar su tarea para la semana, use: </p>
+    <span> <a href="https://sprz05.github.io/SCHEDULE_MAKER/" target="_blank"> WHOB </a> </span>
 </div>
 
-<a style="display:none" id="newGoalBtn" href="goalBotMain" target="_blank"><button class="btn btn-danger">New Goal</button></a>
+<div id = "ITHBTest" style = "display: none;">
+  <p> Para estudiar para su prueba, intente usar ITHBTest, note funciona mejor con hojas de trabajo: </p>
+    <span> <a href="https://sprz05.github.io/ITHIB_v1.0/testITHBCam.html" target="_blank"> ITHBTest </a> </span>
+</div>
+</div>
+
+<a style="display:none" id="newGoalBtn" href="goalBotMain.html" target="_blank"> <button class = "btn btn-danger"> Nuevo objetivo </button> </a>
 
 
 </center>

@@ -9,17 +9,17 @@
 
 
       <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="viewpOt" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
-      <!--     Fonts and icons     -->
+      <!--     fonts and icons     -->
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
       <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
       <!-- Nucleo Icons -->
       <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
       <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
-      <!-- Font Awesome Icons -->
+      <!-- font Awesome Icons -->
       <link href="./assets/css/font-awesome.css" rel="stylesheet" />
       <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
       <!-- CSS Files -->
@@ -31,16 +31,16 @@
 
 <style>
 .h3{
-  color:black;
+  colO:black;
 }
 p{
-  color: black;
+  colO: black;
 }
 body {
 
 font-family: 'Roboto', sans-serif;
 font-size: 22px;
-text-align: center;
+text-align: cEntrar;
 background: #ecf0e6;
 font-weight: 100;
 padding-top: 50px;
@@ -59,21 +59,24 @@ padding-left: 80px;
 
 
 
-<!--Start of Form-->
+<!--Start of form-->
 
-<center>
+<cEntrar>
   <div id="easyAssignments">
 
-    <p>How many easy assignments do you have to do today?</p>
+    <p>¿Cuántas tareas fáciles tienes que hacer hoy?
+
+</p>
     <input class="pink" min="0" max="10" type="number" id="numEAI" required>
 
     <p></p>
 
-    <button class="btn btn-primary" onclick="showInputEText(); showInputE();">Enter</button>
+    <button class="btn btn-primary" onclick="showInputEText(); showInputE();">Entrar</button>
 
 
 
-      <p style="display:none;" id="inputEText">List your easy assignments here (then click save)</p>
+      <p style="display:none;" id="inputEText">Enumere sus asignaciones fáciles aquí (luego haga clic en guardar)
+</p>
 
         <input class="red" style="display:none" type="text" id="easyA1">
         <input class="yellow" style="display:none" type="text" id="easyA2">
@@ -87,16 +90,16 @@ padding-left: 80px;
         <input class="darkPurple" style="display:none" type="text" id="easyA10">
 
 
-      <button style="display:none" id="saveE" class="btn btn-primary" onclick="displayM();">Save</button>
+      <button style="display:none" id="SalvarE" class="btn btn-primary" onclick="displayM();">Salvar</button>
 
 
      <p>
-   or
+   O
    </p>
 
     <button class="btn btn-secondary" onclick="dontShowInput1E();
         displayM();">
-       I don't have any easy assignments today
+      Hoy no tengo asignaciones fáciles
     </button>
 
 
@@ -105,16 +108,17 @@ padding-left: 80px;
 
 
 <div id="mediumAssignments" style="display:none">
-  <p>How many medium assignments do you have to do today?</p>
+  <p>¿Cuántas tareas medianas tienes que hacer hoy?
+</p>
   <input class="pink" min="0" max="5" type="number" id="numMAI">
 
   <p></p>
 
-  <button class="btn btn-primary" onclick="showInputMText(); showInputM();">Enter</button>
+  <button class="btn btn-primary" onclick="showInputMText(); showInputM();">Entrar</button>
 
 
 
-    <p style="display:none" id="inputMText">List your medium assignments here (then click save):</p>
+    <p style="display:none" id="inputMText">Enumere sus asignaciones medianas aquí (luego haga clic en Salvar):</p>
     <input class="red" style="display:none" type="text" id="mediumA1">
     <input class="yellow" style="display:none" type="text" id="mediumA2">
     <input class="green" style="display:none" tsype="text" id="mediumA3">
@@ -129,29 +133,31 @@ padding-left: 80px;
 
     <p> </p>
 
-    <button style="display:none" id="saveM" class="btn btn-primary" onclick="displayH();">Save</button>
+    <button style="display:none" id="SalvarM" class="btn btn-primary" onclick="displayH();">Salvar</button>
 
          <p>
-   or
+   O
    </p>
 
      <button class="btn btn-secondary" onclick="dontShowInput1M();
         displayH();">
-        I don't have any medium assignments today
+       Hoy no tengo asignaciones medianas
         </button>
 
 </div>
 
 
 <div id="hardAssignments" style="display:none">
-  <p>How many hard assignments do you have to do today?</p>
+  <p>¿Cuántas tareas difíciles tienes que hacer hoy?
+</p>
   <input class="pink" min="0" max="5" type="number" id="numHAI">
   <p></p>
-  <button class="btn btn-primary" onclick="showInputHText(); showSaveH(); search(); showInputH();">Enter</button>
+  <button class="btn btn-primary" onclick="showInputHText(); showSalvarH(); search(); showInputH();">Entrar</button>
 
 
 
-  <p id="inputHText" style="display:none">List your hard assignments here (then click save):</p>
+  <p id="inputHText" style="display:none">Enumere sus asignaciones difíciles aquí (luego haga clic en Salvar):
+</p>
     <input class="red" style="display:none" type="text" id="hardA1">
     <input class="yellow" style="display:none" type="text" id="hardA2">
     <input class="green" style="display:none" type="text"id="hardA3">
@@ -165,41 +171,43 @@ padding-left: 80px;
 
     <p> </p>
 
-  <button style="display:none" id="saveH" class="btn btn-primary" onclick="makeToDoList(); search(); set(); displayTDL();">Save</button>
+  <button style="display:none" id="SalvarH" class="btn btn-primary" onclick="makeToDoList(); search(); set(); displayTDL();">Salvar</button>
 
      <p>
-   or
+   O
    </p>
 
   <button class="btn btn-secondary" onclick="dontShowInput1H();
         makeToDoList(); displayTDL();">
-I don't have any hard assignments today </button>
+Hoy no tengo asignaciones difíciles
+ </button>
 
 
 
 </div>
 
-<center>
+<cEntrar>
 
 
-<!--End of Form-->
+<!--End of form-->
 
 
 
 <!--Start of To-do List-->
 
-<div text-align="center" id=toDoList style="display:none">
-  <h1>Homework blocks for today:</h1>
+<div text-align="cEntrar" id=toDoList style="display:none">
+  <h1>Bloques de tareas para hoy:
+</h1>
 
   <p>
-  When you finish an assignment cross it off!
+  Cuando termine una tarea, táchela.
   </p>
 
 
 <div class="easy-block" id="easy-block">
-<h3>Easy Block ✌️:</h3>
+<h3>Bloqueo fácil ✌️:</h3>
 <p>
-All your easy assignments for the day
+Todas tus tareas fáciles del día
 </p>
   <input type="checkbox" style="font-size: 30px;" id="toDo1" name="toDo1" value="toDo1"/>
   <label style="font-size: 30px;" class="strikethrough" for="toDo1"><span id="result1"></span></label><br>
@@ -235,9 +243,11 @@ All your easy assignments for the day
 
 
 <div class="medium-block" id="medium-block">
-<h3>Medium Block 👍:</h3>
+<h3>Bloque medio 👍:
+</h3>
 <p>
-All your medium assignments for the day.
+Todas tus tareas medianas del día.
+
 </p>
 
 
@@ -245,8 +255,9 @@ All your medium assignments for the day.
   <label style="font-size: 30px;"class="strikethrough" for="toDo1M"><span id="result1M"></span>
   </label><span>
     
-    <a style="display:none" id="slideshowHelpBtn1" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn1"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn1" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn1"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?
+</a>
 
   </span><br>
 
@@ -254,8 +265,8 @@ All your medium assignments for the day.
   <label style="font-size: 30px;"class="strikethrough" for="toDo2M"><span id="result2M"></span></label>
     <span>
     
-    <a style="display:none" id="slideshowHelpBtn2" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn2"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn2" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn2"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
   <br>
@@ -265,8 +276,8 @@ All your medium assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn3" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn3"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn3" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn3"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -277,8 +288,8 @@ All your medium assignments for the day.
 
   <span>
     
-    <a style="display:none" id="slideshowHelpBtn4" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn4"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help</a>
+    <a style="display:none" id="slideshowHelpBtn4" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn4"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda?</a>
 
   </span>
 
@@ -290,8 +301,8 @@ All your medium assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn5" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn5"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn5" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn5"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -304,8 +315,8 @@ All your medium assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn6" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn6"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn6" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn6"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -318,8 +329,8 @@ All your medium assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn7" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn7"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn7" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn7"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -331,8 +342,8 @@ All your medium assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn8" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn8"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn8" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn8"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -344,8 +355,8 @@ All your medium assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn9" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn9"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn9" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn9"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -357,8 +368,8 @@ All your medium assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn10" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn10"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn10" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn10"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -366,9 +377,10 @@ All your medium assignments for the day.
 </div>
 
 <div class="hard-block" id="hard-block">
-<h3>Hard Block 🤟</h3>
+<h3>Bloque duro 🤟
+</h3>
 <p>
-All your hard assignments for the day.
+Todas tus tareas difíciles del día.
 </p>
 
   <input type="checkbox" style="font-size: 30px;" id="toDo1H" name="toDo1H" value="toDo1H"/>
@@ -377,8 +389,8 @@ All your hard assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn11" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn11"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn11" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn11"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -390,8 +402,8 @@ All your hard assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn12" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn12"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn12" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn12"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -403,8 +415,8 @@ All your hard assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn13" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn13"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn13" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn13"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -416,8 +428,8 @@ All your hard assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn14" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn14"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn14" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn14"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -429,8 +441,8 @@ All your hard assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn15" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn15"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn15" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn15"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -442,8 +454,8 @@ All your hard assignments for the day.
 
 <span>
     
-    <a style="display:none" id="slideshowHelpBtn16" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn16"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn16" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn16"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -455,8 +467,8 @@ All your hard assignments for the day.
 
   <span>
     
-    <a style="display:none" id="slideshowHelpBtn17" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn17"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn17" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn17"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -469,8 +481,8 @@ All your hard assignments for the day.
 
   <span>
     
-    <a style="display:none" id="slideshowHelpBtn18" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn18"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn18" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn18"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -483,8 +495,8 @@ All your hard assignments for the day.
 
   <span>
     
-    <a style="display:none" id="slideshowHelpBtn19" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn19"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn19" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn19"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -498,8 +510,8 @@ All your hard assignments for the day.
 
   <span>
     
-    <a style="display:none" id="slideshowHelpBtn20" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">Need Help?</a>
-    <a style="display:none" id="mathHelpBtn20"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">Need Help with math?</a>
+    <a style="display:none" id="slideshowHelpBtn20" href="https://docs.google.com/document/u/2/d/e/2PACX-1vRNEOSqt21HwgOTmLLJIdmVoFGNdUn4DjPpnRg-7C7unGpZYcK9m5AtesYryjcXmo4a35hNX1yt--RN/pub" target="_blank" class="btn btn-secondary">¿Necesitas ayuda?</a>
+    <a style="display:none" id="mathHelpBtn20"  target="_blank" href="https://sprz05.github.io/StudyBots/mathHWHelp.html" class="btn btn-secondary">¿Necesitas ayuda con las matemáticas?</a>
 
   </span>
 
@@ -510,31 +522,36 @@ All your hard assignments for the day.
 
 </div>
 
-    <button onclick="showGameDiv();">I finished all my assignments</button>
-    <button onclick="restartTDL();">Make a new to do list</button>
+    <button onclick="showGameDiv();">Terminé todas mis tareas
+</button>
+    <button onclick="restartTDL();">Haz una nueva lista de cosas por hacer
+</button>
 
 
 
 
 
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vSQkPl6yUPpzvsclJQUFeLcs84XnYjbO6JXAkhPM5qpKNNIvqBILZ1QoR9udCGf31am__48NYwvm834/pub?w=414&amp;h=418">
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vSQkPl6yUPpzvsclJQUFeLcs84XnYjbO6JXAkhPM5qpKNNIvqBILZ1QO9udCGf31am__48NYwvm834/pub?w=414&amp;h=418">
 
 
 
 
 <!--End of To-do List-->
 
-</center>
+</cEntrar>
 </body>
 </html>
 
 
 <div id="gameDiv" style="display:none">
-<p>There's no way I can check so I'm going to trust your word, as a reward for finishing all your assignments, want to play some games?</p>
+<p>No hay forma de que pueda verificar, así que voy a confiar en tu voluntad, como recompensa por terminar todas tus tareas, ¿quieres jugar algunos juegos?
+</p>
 <br>
-  <a href="game.html" target="_blank" class="btn btn-primary">Yes! I earned my reward!</a>
-  <button class="btn btn-warning" onclick="hideGameDiv();">No, go back I haven't finished my assignments</button>
+  <a href="game.html" target="_blank" class="btn btn-primary">¡Si! ¡Me gané mi recompensa!
+</a>
+  <button class="btn btn-warning" onclick="hideGameDiv();">No, vuelve. No he terminado mis tareas.
+</button>
 </div>
 
 <script>
@@ -558,8 +575,8 @@ function hideGameDiv(){
   }
     
 function set(){
-var ToDoListToSave = document.getElementById("toDoList").innerHTML;
-localStorage.setItem('hobList', ToDoListToSave);
-console.log(ToDoListToSave)
+var ToDoListToSalvar = document.getElementById("toDoList").innerHTML;
+localStOage.setItem('hobList', ToDoListToSalvar);
+console.log(ToDoListToSalvar)
 }
 </script>
